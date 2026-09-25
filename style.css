@@ -1,0 +1,221 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fff7f9;
+  color: #292329;
+}
+
+header {
+  height: 75px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  box-shadow: 0 2px 10px #00000010;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #e94f8a;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #e94f8a;
+}
+
+.hero {
+  min-height: 520px;
+  padding: 70px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  background: linear-gradient(135deg, #fff1f5, #ffe1eb);
+}
+
+.subtitle {
+  color: #e94f8a;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin: 15px 0;
+}
+
+.hero h1 span {
+  color: #e94f8a;
+}
+
+.hero p {
+  line-height: 1.7;
+  max-width: 550px;
+}
+
+.btn,
+.product-card button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 13px 25px;
+  border: none;
+  border-radius: 30px;
+  background: #e94f8a;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hero-card {
+  width: 300px;
+  height: 350px;
+  border-radius: 30px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 15px 40px #d86b8b30;
+}
+
+.fashion-icon {
+  font-size: 130px;
+}
+
+.features,
+.products,
+.goal {
+  padding: 70px 8%;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 40px;
+}
+
+.feature-container,
+.products,
+.goal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.feature,
+.goal-card,
+.product-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px #0000000c;
+}
+
+.feature span,
+.goal-card span {
+  font-size: 45px;
+}
+
+.feature h3,
+.goal-card h2,
+.product-card h3 {
+  margin: 15px 0 10px;
+}
+
+.page-title {
+  text-align: center;
+  padding: 70px 20px 30px;
+}
+
+.page-title h1 {
+  font-size: 42px;
+  color: #e94f8a;
+}
+
+.products {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.product-image {
+  height: 180px;
+  border-radius: 15px;
+  background: #ffe5ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+}
+
+.product-card strong {
+  display: block;
+  color: #e94f8a;
+  margin-top: 15px;
+}
+
+.product-card button {
+  margin-top: 15px;
+}
+
+.goal {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #292329;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0 5%;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .feature-container,
+  .products,
+  .goal {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card {
+    width: 260px;
+  }
+}
